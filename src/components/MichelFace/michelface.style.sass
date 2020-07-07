@@ -1,0 +1,15 @@
+.home
+img
+    z-index: -9
+    width: 500px
+    position: fixed
+    animation: rotationAndTranslation 7s infinite linear
+
+$degrees: 0deg 120deg 240deg 360deg
+$pos: 1
+
+@keyframes rotationAndTranslation
+    0%
+        transform: translate(-50vw) rotate(0deg)
+    100%
+        transform: translate(120vw) rotate(1800deg)

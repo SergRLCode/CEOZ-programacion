@@ -1,0 +1,30 @@
+.collapsible
+  width: 100%
+  box-sizing: border-box
+  display: flex
+  justify-content: space-between
+  padding: 1em 2.4em
+  cursor: pointer
+  border-bottom: 1px solid #cccccc
+  user-select: none
+  h1
+    font-size: 2.5em
+    font-weight: 300
+  img
+    width: 1.5em
+    transition: transform 0.25s
+  .arrowUp
+    transform: rotateX(0deg)
+  .arrowDown
+    transform: rotateX(180deg)
+  &__
+    &items
+      transition: height 0.25s
+      &__
+        &item
+          cursor: pointer
+          border-bottom: 1px solid #cccccc
+          padding: 1em 4.8em
+          h1
+            font-size: 2.5em
+            font-weight: 300

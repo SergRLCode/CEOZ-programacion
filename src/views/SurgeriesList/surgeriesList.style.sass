@@ -1,0 +1,48 @@
+.surgeries-list
+  height: 100vh
+  width: 100%
+  overflow-y: scroll
+  overflow-x: hidden
+  position: relative
+  .delete
+    position: fixed
+    border-radius: 99px
+    left: 50%
+    bottom: 4em
+    transition: background-color 0.2s, bottom 0.5s, opacity 0.5s
+    &--
+      &hide
+        bottom: -5em
+        opacity: 0
+      &show
+        bottom: 4em
+        opacity: 1
+    img
+      width: 3em
+      padding: 1em 1.5em
+  .message
+    height: 100%
+    font-size: 4.5em
+    font-weight: lighter
+    display: flex
+    justify-content: center
+    align-items: center
+  .past_surgeries
+    cursor: pointer
+    width: 4em
+    height: 4em
+    position: fixed
+    top: 2em
+    right: 3em
+    padding: 1em
+    border-radius: 99px
+    background-color: #0078a7
+  .loading
+    top: 0%
+    width: 100%
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    background-color: rgba(255, 255, 255, 0.8)

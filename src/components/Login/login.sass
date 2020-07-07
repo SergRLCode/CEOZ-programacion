@@ -1,0 +1,25 @@
+@import '../../mixins'
+
+.login
+  flex-grow: 1
+
+  @include element('login-form')
+    margin-top: 4em
+    display: flex
+    flex-direction: column
+
+    p
+      font-size: 2em
+
+    div
+      margin: 0.5em 0
+
+      .MuiButtonBase-root
+        padding: 0 0.5em
+        margin: 0
+
+    button
+      margin: 2em 0
+
+    input
+      font-size: 1em

@@ -1,0 +1,80 @@
+.navbar
+  width: 70px
+  height: 100vh
+  padding: 30px 5px 50px
+  box-sizing: border-box
+  background-color: #0078A7
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-between
+  transition: width 0.2s, padding 0.2s, opacity 0.2s
+  &:hover
+    width: 300px
+    padding: 30px 20px 50px
+    .logo
+      width: 210px
+    .log
+      width: 100%
+      display: flex
+      justify-content: flex-start
+      .navbar-icons
+        .menu
+          .icon
+            p
+              display: inline
+            img
+              width: 24px
+        .logout
+          p
+            display: inline
+          .icon
+            width: 24px
+  .logo
+    width: 50px
+    transition: width 0.15s
+  .log
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    .navbar-icons
+      height: 500px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      .menu
+        .icon
+          padding: 0.5em 0
+          margin: 0.5em 0
+          width: 100%
+          display: flex
+          cursor: pointer
+          p
+            color: white
+            padding: 0 0.5em
+            display: none
+          img
+            width: 24px
+            transition: width 0.15s
+            padding: 0 0.5em
+          &:hover
+            background-color: rgba(255, 255, 255, 0.2)
+            border-radius: 4px
+      .logout
+        cursor: pointer
+        display: flex
+        padding: 0.3em 0
+        p
+          color: white
+          display: none
+        .icon
+          padding: 0 0.5em
+          width: 24px
+          transition: width 0.15s
+        &:hover
+          background-color: rgba(255, 255, 255, 0.2)
+          border-radius: 4px
+  .show
+    opacity: 1
+  .hide
+    opacity: 0

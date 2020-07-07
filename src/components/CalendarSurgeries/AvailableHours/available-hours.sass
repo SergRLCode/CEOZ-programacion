@@ -1,0 +1,29 @@
+@mixin item($color, $backColor, $backColorHover, $cursor)
+  width: 100%
+  padding: 1em
+  display: flex
+  align-items: center
+  font-size: 2em
+  font-weight: 300
+  border-bottom: 1px solid #afafaf
+  color: $color
+  background-color: $backColor
+  &:hover
+    cursor: $cursor
+    color: white
+    background-color: $backColorHover
+
+.available-hours
+  height: 100vh
+  width: 100%
+  overflow-y: scroll
+  overflow-x: hidden
+  position: relative
+  h1
+    text-align: center
+  .available
+    @include item(#000000, #FFFFFF, #00a3e3, pointer)
+  .jornada
+    @include item(#FFFFFF, rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5), context-menu)
+  .busy
+    @include item(#FFFFFF, rgba(0, 160, 255, 0.6), rgba(0, 160, 255, 0.6), context-menu)
